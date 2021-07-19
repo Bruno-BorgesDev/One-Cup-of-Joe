@@ -23,7 +23,9 @@
 body {
     background: url(./images/background.jpg);
     background-size: cover;
-    background-repeat: none;     
+    background-repeat: none;   
+    
+    overflow-x:hidden
 }
 
 .title {
@@ -34,38 +36,26 @@ body {
 
 p {
     color: var(--marrom-escuro);
+    font-size: 1.2rem;
 }
 
-.container {
-    margin-bottom: 3px;
-   
-    
+.container {        
     display: flex;
     flex-direction: column;
     align-items: center;        
 
-    margin: 0 auto;
+    margin: 0 auto;  
     
-
-    width: 480px;
-    height: 280px;
-
-
+    height: 17.5rem; 
 
     color: #fff;
 
-
-
     text-align: center;
-
-
 
     display: flex;
     flex-direction: column;
     
-    padding: 4px;
-    
-    
+    padding: 4px;       
 }
 
 .intro {    
@@ -81,7 +71,6 @@ p {
     height: 40px;
     font-size: 2rem;      
 }
-
 
 .header {
     margin-top: 10px;
@@ -209,6 +198,10 @@ p {
 
 
 .form-itens input {
+    font-family: 'Nunito', serif;
+    letter-spacing: 0;
+    word-spacing: .3px;
+
     margin-bottom: 5px;
 
     width: 230px;
@@ -338,6 +331,46 @@ p {
     width: 80px;
     height: 40px;
 }
+
+/*Responsivo*/
+
+/*Small devices*/
+@media (max-width: 500px) {
+    .title {        
+        background :rgba(131, 87, 69, 0.418)
+    }
+
+    .title p, h1 {
+        color: #bb8965;         
+    }
+
+    .form {        
+        width: 340px;
+        height: 340px;
+        
+        margin-bottom: 1rem;
+    }    
+
+    .benneficts {
+        display: grid;        
+        grid-template-columns: 4fr 4fr; 
+        
+        width: 30rem;
+
+        margin: 0 auto;
+    }
+
+    .card {                          
+        height: 250px;  
+    }
+
+    .footer {  
+        margin-top: 300px;
+        clear: both;
+    }
+}
+
+
 
 
 

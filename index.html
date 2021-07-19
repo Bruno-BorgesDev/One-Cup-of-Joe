@@ -10,7 +10,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Uchen&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -55,19 +55,19 @@
         <p>
             E receba nossas promoções especiais
             para nossos grãos e dicas para um café incrível.
-        </p>
-        <form class="form-itens" action="">
+        </p>        
+        <form class="form-itens" id="form">
             <div class="form-inputs">
                 <div class="form-input-name">
                     <label for="">Nome</label>
-                    <input type="text" required>
+                    <input type="text" id="name" required>
                 </div>
                 <div class="form-input-email">
                     <label>E-mail</label>
-                    <input type="email" required>
+                    <input type="email" id="email" required>
                 </div>
                 <div class="form-terms">
-                    <input type="checkbox" name="" id="" required>
+                    <input type="checkbox" name="" id="check" required>
                     <p>
                         Concordo em receber e-mails com dicas
                         e promoções
@@ -139,7 +139,7 @@
     </footer>
 
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
